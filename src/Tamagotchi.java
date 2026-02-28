@@ -35,6 +35,12 @@ public abstract class Tamagotchi {
     public void setMood(Mood mood) {
 
     }
-
+    public abstract void play();
     public abstract int calculateEnergy();
+    public abstract void feed(Food food);
+
+    @Override
+    public String toString() {
+        return getClass().getSimpleName() + " [Name: " + name + ", Energy: " + energy + ", Food: " + feed + ", Mood: " + mood + "]";
+    }
 }
