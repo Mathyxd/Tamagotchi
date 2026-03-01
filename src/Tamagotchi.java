@@ -12,9 +12,11 @@ public abstract class Tamagotchi {
         this.mood = mood;
     }
     public String getName() {
+
         return name;
     }
     public int getEnergy() {
+
         return energy;
     }
     public Food getFood() {
@@ -41,6 +43,6 @@ public abstract class Tamagotchi {
 
     @Override
     public String toString() {
-        return getClass().getSimpleName() + " [Name: " + name + ", Energy: " + energy + ", Food: " + feed + ", Mood: " + mood + "]";
+        return getClass().getSimpleName() + " [Name: " + name + ", Energy: " + energy + ", Favorite Food: " + feed + ", Current Mood: " + mood + "]";
     }
 }

@@ -9,7 +9,8 @@ public class Cat extends Tamagotchi {
         return getEnergy() - 5;
     }
     public void play() {
-        System.out.println(getName() + "Is playing with the string");
+        setEnergy(getEnergy() - 30);
+        System.out.println(getName() + "Is playing with the string. Energy left: " + getEnergy());
     }
     public void feed(Food food) {
         if (food == Food.FISH) {

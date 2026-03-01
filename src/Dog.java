@@ -8,7 +8,8 @@ public class Dog extends Tamagotchi {
         return getEnergy() - 10;
     }
     public void play() {
-        System.out.println(getName() + " Is fetching the ball");
+        setEnergy(getEnergy() - 20);
+        System.out.println(getName() + " Is fetching the ball. Energy left: " + getEnergy());
     }
     public void feed(Food food) {
         if (food == Food.FISH) {

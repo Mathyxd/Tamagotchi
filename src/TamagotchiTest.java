@@ -9,6 +9,7 @@ public class TamagotchiTest {
         pets.add(new Dog("Walter", 100, Food.BONE, Mood.HAPPY));
         pets.add(new Bear("Kuma", 500, Food.SEAL, Mood.TIRED));
         pets.add(new Cat("Luna", 40, Food.MILK, Mood.HUNGRY));
+        pets.add(new Dog("kp", 10 ,Food.MEAT, Mood.TIRED));
 
 
         Scanner scanner = new Scanner(System.in);

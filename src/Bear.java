@@ -9,7 +9,8 @@ public class Bear extends Tamagotchi {
         return getEnergy() - 30;
     }
     public void play() {
-        System.out.println(getName()+ "Is hunting the seals");
+        setEnergy(getEnergy() - 50);
+        System.out.println(getName()+ "Is rolling around on the stomach. Energy left: " + getEnergy());
     }
     public void feed(Food food) {
         if (food == Food.SEAL) {
