@@ -57,10 +57,7 @@ public class TamagotchiTest {
             {
                 ;
             }
-            System.out.println("pick a pet, or type -1 to quit");
-            int choice = scanner.nextInt();
-
-            if (choice == 0) {
+            if (action == 0) {
                 running = false;
             } else if (action == 1) {
                 activePet.play();
